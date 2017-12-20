@@ -1,0 +1,40 @@
+{
+  "name": "koa-safe-redirect",
+  "version": "1.0.8",
+  "description": "safe redirect middleware for koa 2.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_CONFIG_DIR='./test/config' jest",
+    "ci": "npm run test -- --coverage"
+  },
+  "keywords": [
+    "safe",
+    "redirect",
+    "koa"
+  ],
+  "author": "forthedamn <zhoguoxin@126.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^21.2.1",
+    "koa": "^2.0.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "config": "^1.28.1",
+    "typeis": "1.1.1"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ],
+    "coverageReporters": [
+      "text-summary",
+      "lcov"
+    ],
+    "bail": true,
+    "testEnvironment": "node"
+  }
+}

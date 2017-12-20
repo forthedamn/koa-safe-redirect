@@ -1,0 +1,21 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "no-console": 0,
+        "no-param-reassign": 0,
+        "func-names": 0,
+        "consistent-return": 0,
+        "yoda": 0,
+        "no-return-await": 0,
+        "eqeqeq": 0,
+        "prefer-destructuring": 0
+    },
+    "globals": {
+        "describe": true,
+        "it": true,
+        "expect": true,
+        "typeis": true,
+        "afterEach": true
+    }
+    
+}
