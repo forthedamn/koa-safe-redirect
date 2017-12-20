@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_CONFIG_DIR='./test/config' jest",
-    "ci": "npm run test -- --coverage"
+    "ci": "npm run test -- --coverage && codecov",
+    "cov": "npm run ci && codecov"
   },
   "keywords": [
     "safe",
@@ -15,6 +16,7 @@
   "author": "forthedamn <zhoguoxin@126.com>",
   "license": "ISC",
   "devDependencies": {
+    "codecov": "^3.0.0",
     "eslint": "^4.13.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
