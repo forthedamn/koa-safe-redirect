@@ -6,16 +6,19 @@
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
 [![npm download][download-image]][download-url]
+[![npm download month][download-month-image]][download-url]
 
 
 [npm-image]: https://img.shields.io/npm/v/koa-safe-redirect.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/koa-safe-redirect
-[travis-image]: https://img.shields.io/travis/forthedamn/todolists.svg?style=flat-square
-[travis-url]: https://travis-ci.org/forthedamn/todolists
-[codecov-image]: https://codecov.io/gh/forthedamn/todolists/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/forthedamn/todolists
-[download-image]: https://img.shields.io/npm/dt/todolists.svg
-[download-url]: https://npmjs.org/package/todolists
+[travis-image]: https://img.shields.io/travis/forthedamn/koa-safe-redirect.svg?style=flat-square
+[travis-url]: https://travis-ci.org/forthedamn/koa-safe-redirect
+[codecov-image]: https://codecov.io/gh/forthedamn/koa-safe-redirect/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/forthedamn/koa-safe-redirect
+[download-image]: https://img.shields.io/npm/dt/koa-safe-redirect.svg
+[download-url]: https://npmjs.org/package/koa-safe-redirect
+[download-month-image]: https://img.shields.io/npm/dm/koa-safe-redirect.svg
+[download-url]: https://npmjs.org/package/koa-safe-redirect
 
 
 safe redirect middleware for koa 2.x
