@@ -35,6 +35,7 @@
       "lcov"
     ],
     "bail": true,
+    "forceExit": true,
     "testEnvironment": "node"
   }
 }
