@@ -11,7 +11,7 @@ safe redirect middleware for koa 2.x
 ```
 npm install koa-safe-redirect --save
 ```
-### 2. config url white list
+### 2. config url white list
 
 ```
 // ./config/default.js
@@ -19,7 +19,7 @@ npm install koa-safe-redirect --save
 module.exports = {
   urlWhiteList: [
     /**
-     * allow the hostname end with 'github.com'
+     * allow the hostname end with 'github.com'
      * like 'https://github.com/**'
      */
     /github\.com$/
@@ -31,11 +31,11 @@ module.exports = {
 
 ```
 const Koa = require('koa');
-const safeRedirect = require('koa-safe-redirect')('urlWhiteList');
+const safeRedirect = require('koa-safe-redirect')('urlWhiteList');
 
 const app = new Koa();
 app
-  .use(safeRedirect)
+  .use(safeRedirect)
   .use(async function (ctx, next) {
   // will get 403
   ctx.redirect('https://www.test.com');
@@ -61,7 +61,7 @@ If config whitelist is empty or not an array,safe redirect will do nothing
 module.exports = {
   urlWhiteList: [
     /**
-     * allow the hostname end with 'github.com'
+     * allow the hostname end with 'github.com'
      * like 'https://xxx.github.com/**'
      */
     /github\.com$/
@@ -75,7 +75,7 @@ module.exports = {
 module.exports = {
   urlWhiteList: [
     /**
-     * only allow the hostname equal 'github.com'
+     * only allow the hostname equal 'github.com'
      * like 'https://github.com/**'
      */
     'github.com'
@@ -101,7 +101,7 @@ module.exports = {
 }
 
 // 2. init middleware
-const safeRedirect = require('koa-safe-redirect')();
+const safeRedirect = require('koa-safe-redirect')();
 ```
 
 #### custom
@@ -115,6 +115,6 @@ module.exports = {
 }
 
 // 2. init middleware
-const safeRedirect = require('koa-safe-redirect')('xxx');
+const safeRedirect = require('koa-safe-redirect')('xxx');
 ```
 
